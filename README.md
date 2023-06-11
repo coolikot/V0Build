@@ -18,8 +18,10 @@ https://www.printables.com/model/171383-less-thin-hexagon-parts-tray/files
 Mods:
 https://github.com/MotorDynamicsLab/LDOVoron0
 https://github.com/christophmuellerorg/voron_0_kirigami_bed
+https://github.com/VoronDesign/Voron-Hardware/tree/master/V0-Umbilical
 https://github.com/chirpy2605/voron/tree/main/V0/XCarriage_v0_2
 https://github.com/zruncho3d/zerofilter
+https://www.printables.com/model/496209-manta-5p-mount-for-voron0x
 
 Day 1: Page 0-66 Build Time : 4hours
 
