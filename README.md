@@ -33,10 +33,24 @@ Board Prep:
   https://bigtreetech.github.io/docs/Software%20Installation.html
   CB1 Source: https://github.com/bigtreetech/CB1
 
-  after Imager:
+  after RPi Imager:
   edit system.cfg with updated wifi password
 
   CB1 Troubleshooting
   https://bigtreetech.github.io/docs/Software%20Configuration.html?h=dfu#update-using-dfu
+  
+  check if CB1 MCU is detected
+  ls /dev/serial/by-id/
+  
+  manual update
+    cd /klipper
+    make clean
+    make menuconfig
+    make
+    output will be in /home/biqu/klipper/out/klipper.bin
+    copy file to pc. and rename to firmware.bin put in SD CARD slot on back
+
+  Sensorless homing: 
+  https://docs.vorondesign.com/community/howto/clee/sensorless_xy_homing.html
   
 </pre>
