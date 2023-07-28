@@ -33,6 +33,7 @@ Board Prep:
   https://bigtreetech.github.io/docs/Software%20Installation.html
   CB1 Source: https://github.com/bigtreetech/CB1
 
+Software
   after RPi Imager:
   edit system.cfg with updated wifi password
 
@@ -50,7 +51,12 @@ Board Prep:
     output will be in /home/biqu/klipper/out/klipper.bin
     copy file to pc. and rename to firmware.bin put in SD CARD slot on back
 
+  Broken Debian update
+    https://www.teamfdm.com/forums/topic/1892-beware-latest-klipper-update-breaks-symlink-to-mcu-on-usb-connected-devices/
+  
   Sensorless homing: 
   https://docs.vorondesign.com/community/howto/clee/sensorless_xy_homing.html
+
+Wiring
   
 </pre>
