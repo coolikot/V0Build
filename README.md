@@ -25,4 +25,15 @@ https://www.printables.com/model/496209-manta-5p-mount-for-voron0x
 
 Day 1: Page 0-66 Build Time : 4hours
 
+Board Prep:
+  Shorting Pin for UART
+  Shorting pin for Sensorless Homing XandY
+  Shorting pin for fans to use 24v
+  https://bigtreetech.github.io/docs/M5P.html#hardware-installation
+  https://bigtreetech.github.io/docs/Software%20Installation.html
+  CB1 Source: https://github.com/bigtreetech/CB1
+
+  after Imager:
+  edit system.cfg with updated wifi password
+  
 </pre>
