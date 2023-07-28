@@ -53,10 +53,30 @@ Software
 
   Broken Debian update
     https://www.teamfdm.com/forums/topic/1892-beware-latest-klipper-update-breaks-symlink-to-mcu-on-usb-connected-devices/
+   
+    "A bug has been introduced in Debian Bullseye (which includes current MainsailOS), which prevents the symlinks in /dev/serial/by-id/ from being created. 
+    If your printer can't connect to the MCU anymore after a system update, you can check if it is caused by that bug by checking the installed version of udev with 
+  
+      apt show udev
+
+    If your version is 247.3-7+deb11u2 you have the broken package installed and should replace it with the "backports" version. Take special care about the last number ("u2"). 
+    
+    1. Install a working version from debian backports: To install the working version of 252.5-2~bpo11+1 (one line, use copy & paste):
+    
+      cd ~;wget http://ftp.us.debian.org/debian/pool/main/s/systemd/libudev1_252.5-2~bpo11+1_`dpkg --print-architecture`.deb http://ftp.us.debian.org/debian/pool/main/s/systemd/udev_252.5-2~bpo11+1_`dpkg --print-architecture`.deb;APT_LISTCHANGES_FRONTEND=none sudo apt install --fix-broken ./libudev1_252.5-2~bpo11+1_`dpkg --print-architecture`.deb ./udev_252.5-2~bpo11+1_`dpkg --print-architecture`.deb; rm libudev1_252.5-2~bpo11+1_`dpkg --print-architecture`.deb udev_252.5-2~bpo11+1_`dpkg --print-architecture`.deb  
+    
+    This command should just want to install the two packages (udev & libudev).  If it tries to do something else, particularly removing a large quantity of packages, stop and reassess the situation
+    
+    2. Reboot: After doing that, reboot the pi by running
+    
+      sudo reboot
+      
+    and Klipper should connect again to your MCU."
   
   Sensorless homing: 
   https://docs.vorondesign.com/community/howto/clee/sensorless_xy_homing.html
 
 Wiring
+  
   
 </pre>
