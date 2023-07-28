@@ -35,5 +35,8 @@ Board Prep:
 
   after Imager:
   edit system.cfg with updated wifi password
+
+  CB1 Troubleshooting
+  https://bigtreetech.github.io/docs/Software%20Configuration.html?h=dfu#update-using-dfu
   
 </pre>
